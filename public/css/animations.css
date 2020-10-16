@@ -7,23 +7,31 @@
         transform: translateY(0);
     }
 }
+@keyframes right{
+    from{
+        transform: translateX(-100%);
+    } to{
+        transform: translateX(0);
+    }
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+    } to{
+        opacity: 1;
+    }
+}
 .animate-up{
     animation-name: up;
     animation-duration: 300ms;
     animation-fill-mode: backwards;
 }
-#logo{
-    animation-delay: 50ms;
+.animate-right{
+    animation-name: right;
+    animation-duration: 300ms;
 }
-.location{
-    animation-delay: 100ms;
-}
-main h1{
-    animation-delay: 150ms;
-}
-.visit p{
-    animation-delay: 200ms;
-}
-.visit a{
-    animation-delay: 250ms;
+.animate-apper{
+    animation-name: aapper;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards;
 }
