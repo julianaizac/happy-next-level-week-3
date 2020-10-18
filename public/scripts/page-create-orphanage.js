@@ -6,7 +6,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
 // create icon
 const icon = L.icon({
-    iconUrl: "./public/images/map-marker.svg",
+    iconUrl: "/images/map-marker.svg",
     iconSize: [58, 68],
     iconAnchor: [29, 68]
 })
@@ -17,7 +17,7 @@ let marker;
 map.on('click', (event) => {
     const lat = event.latlng.lat;
     const lng = event.latlng.lng;
-    
+
     document.querySelector('[name=lat]').value = lat;
     document.querySelector('[name=lng]').value = lng;
 
@@ -36,10 +36,10 @@ function addPhotoField() {
 
     // pegar o container p duplicar .new-image
     const fieldsContainer = document.querySelectorAll('.new-upload')
-    
+
     // realizar o clone da ultima imagem adicionada
     const newFieldContainer = fieldsContainer[fieldsContainer.length - 1].cloneNode(true)
-    
+
     // verificar se o campo está vazio, se sim, não adicioanar ao container de imagens
     const input = newFieldContainer.children[0]
 
@@ -54,7 +54,7 @@ function addPhotoField() {
     container.appendChild(newFieldContainer)
 }
 
-function deleteField(event){
+function deleteField(event) {
     const span = event.currentTarget
     const fieldsContainer = document.querySelectorAll('.new-upload')
 
@@ -74,11 +74,11 @@ function toggleSelect(event) {
         .forEach(function (button) {
             button.classList.remove('active');
         })
-    
+
     // colocar a class .active nesse botao clicado
     const button = event.currentTarget
     button.classList.add('active')
-    
+
     // atualizar o meu input hidden com o valor selecionado
     const input = document.querySelector('[name="open_on_weekends"]')
 
