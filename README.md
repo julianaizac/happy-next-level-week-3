@@ -1,6 +1,4 @@
-<h1 align="center">
-    <img alt="Happy" title="Happy" src=".github/logo.svg" />
-</h1>
+<h1 align="center">Happy - Next Level Week 3</h1>
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -42,4 +40,4 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 
 ---
 
-<p align="center">Desenvolvido com 💜 por Juliana Izac</p>
+<p align="center">Com 💜 por Juliana Izac</p>
